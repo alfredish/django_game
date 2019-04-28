@@ -16,6 +16,11 @@
       </form>
       <br>
       <br>
-      {{ name }}
+
+
+      {% if var %}
+      <p>Ваш переведенный текст :</p>
+      {{ var }}
+      {% endif %}
   </body>
 </html>
