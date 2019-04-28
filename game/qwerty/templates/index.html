@@ -5,6 +5,17 @@
     <title></title>
   </head>
   <body>
-    <h1>hi</h1>
+    <h1>KiryaKor translate</h1>
+    <p>Перевод с английского на русский</p>
+    <form method="post", action=''>
+        {% csrf_token %}
+        {{ form.name }}
+        <br>
+        <br>
+        <input type="submit" value="Перевести текст">
+      </form>
+      <br>
+      <br>
+      {{ name }}
   </body>
 </html>
